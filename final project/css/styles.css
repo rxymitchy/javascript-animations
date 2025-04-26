@@ -1,0 +1,111 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Theme Styles */
+.light-theme {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.blue-theme {
+    background-color: #e6f2ff;
+    color: #003366;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Animation Styles */
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #ff6b6b;
+    margin: 20px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+.animated-image {
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.animated-image img {
+    max-width: 200px;
+    transition: all 0.5s ease;
+}
+
+/* Animation Classes */
+.box-animate {
+    transform: translateX(200px) rotate(180deg);
+    background-color: #4ecdc4;
+    border-radius: 50%;
+}
+
+.image-animate {
+    transform: scale(1.2) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframe Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+    
+.bounce-animation {
+    animation: bounce 1s infinite;
+}
+
+/* Animation Speed Classes */
+.slow-speed {
+    animation-duration: 2s;
+    transition-duration: 2s;
+}
+
+.normal-speed {
+    animation-duration: 1s;
+    transition-duration: 1s;
+}
+
+.fast-speed {
+    animation-duration: 0.5s;
+    transition-duration: 0.5s;
+}
